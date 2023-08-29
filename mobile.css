@@ -1,0 +1,72 @@
+        /* Media Query cho màn hình điện thoại max-width 600px  */
+        
+        @media (max-width: 600px) {
+            .container1 {
+                flex-direction: column;
+                margin: 20px 0 20px 50px;
+            }
+            .nav {
+                padding: 0;
+            }
+            .target {
+                margin: 0 50px 0 50px;
+            }
+            /**/
+            .container2,
+            .container3,
+            .ccgt,
+            .nd {
+                display: flex;
+                flex-direction: column;
+            }
+            .container3 {
+                padding: 30px 50px 30px 50px;
+            }
+            /**/
+            section>.container {
+                padding: 0;
+                margin: 50px;
+            }
+            .ccgt {
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 40px;
+            }
+            .nd {
+                align-items: flex-start;
+            }
+            .nd p {
+                margin: 0 0 10px 0;
+            }
+            /**/
+            .container6 {
+                padding: 20px;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px;
+            }
+            .section-title1 {
+                margin: 10px 0 0 50px;
+            }
+            .canhan {
+                padding: 5px;
+                font-size: 14px;
+                flex-direction: column;
+                text-align: left;
+            }
+            .r1 {
+                width: 45px;
+                height: 25px;
+                margin: 5px;
+            }
+            .table2 {
+                width: 100%;
+                font-size: 15px;
+            }
+            th,
+            td {
+                padding: 5px;
+            }
+            /**/
+            .ft {
+                display: none;
+            }
+        }

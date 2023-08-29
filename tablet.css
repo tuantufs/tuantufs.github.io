@@ -1,0 +1,66 @@
+/* Truy vấn cho màn hình tablet */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container3 {
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    h1.tieude {
+        font-size: 24px;
+    }
+    .r {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 2px;
+        font-size: 14px;
+    }
+    .job1 {
+        padding: 10px;
+    }
+    .nn1 i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .p1,
+    .p2,
+    .p3 {
+        padding-top: 20px;
+    }
+    .score-bar1,
+    .score-bar2,
+    .score-bar3 {
+        width: 30px;
+    }
+    /**/
+    section>.container {
+        padding: 0;
+        margin: 20px;
+    }
+    .ccgt {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .container6 {
+        padding: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nd {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-title1 {
+        margin-left: 20px;
+    }
+    .canhan {
+        flex-direction: column;
+        text-align: left;
+    }
+    .r1 {
+        margin: 10px 0;
+    }
+    .table2 {
+        width: auto;
+    }
+}
