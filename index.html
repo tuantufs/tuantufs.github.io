@@ -1,393 +1,667 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/laptop.css">
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Assignment 03</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>View Schedule
+    </title>
+    <link rel="Stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" type="text/css" />
+    <link rel="Stylesheet" href="../fu.css" type="text/css" />
+    <link rel="Stylesheet" href="../JavaScript/jquery.css" type="text/css" />
+    <link rel="Stylesheet" href="../JavaScript/jquery-ui.css" type="text/css" />
+    <link rel="Stylesheet" href="../JavaScript/jquery.alerts.css" type="text/css" />
+    <script src="../JavaScript/jquery.min.js" type="text/javascript"></script>
+    <script src="../JavaScript/jquery_002.js" type="text/javascript"></script>
+    <script src="../JavaScript/jquery_003.js" type="text/javascript"></script>
+    <script src="../JavaScript/jquery.js" type="text/javascript"></script>
+    <script src="../JavaScript/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="../JavaScript/jquery-ui.js" type="text/javascript"></script>
+    <script src="../JavaScript/jquery.alerts.js" type="text/javascript"></script>
+    <link rel="Stylesheet" href="../Content/bootstrap.css" type="text/css" />
+    <link rel="Stylesheet" href="../Content/bootstrap.min.css" type="text/css" />
+    <link rel="Stylesheet" href="../Content/bootstrap-theme.min.css" type="text/css" />
+    <style type="text/css">
+        .style1 {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <!--banner-->
-    <header>
-        <img class="bannerimg" src="images/banner.jpg" alt="banner" style="width:100%" ;/>
-        <div class="bannertext">
-            <h2>Phạm Tuấn Tú</h2>
-            <p>Full Stack Developer</p>
-        </div>
-    </header>
-    <!--menu-->
-    <section id=" nav-bar ">
-        <nav class="container1">
-
-            <a class="nav text-decoration-none" href="# ">
-                <td><i class="icon-user"></i></td><b class="text-black-50">Thông tin</b></a>
-            <a class="nav text-decoration-none" href="# ">
-                <td><i class="icon-doc-text-inv"></i></td><b class="text-black-50">Lý lịch</b></a>
-            <a>
-                <div></div>
-            </a>
-            <a class="nav text-decoration-none" href="# ">
-                <td><i class="icon-mail-alt"></i></td><b class="text-black-50">Chứng chỉ</b></a>
-            <a class="nav text-decoration-none" href="# ">
-                <td><i class="icon-star-1"></i></td><b class="text-black-50">Dự Án</b></a>
-        </nav>
-    </section>
-    <!--thông tin cá nhân-->
-    <section id="about " class="bg-grey ">
-        <div class="container2 ">
-            <div class="target ml-3 ">
-                <h1 class="section-title mb-lg-3 ">Mục tiêu nghề nghiệp</h1>
-                <p class="hiphop">
-                    Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được trau dồi và không ngừng học hỏi để phát
-                    triển bản thân, cũng như hoàn thành tốt nhất công việc được giao.
-                </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>
+                    <span>FPT University Academic Portal</span>
+                </h1>
             </div>
-            <div class="personal-info ">
-                <h1 class="section-title ">Thông tin cá nhân</h1>
-                <div class="hiphop">
-                    <div><span>Giới tính</span> : Nam</div>
-                    <div><span>Ngày sinh</span> : 05/09/2003</div>
-                    <div><span>Điện thoại</span> : (+84) 365633376</div>
-                    <div><span>Email</span> : tuptFX23195@funix.edu.vn</div>
-                    <div><span>Địa chỉ</span> : Hoàng Lâu,Tam Dương,Vĩnh Phúc</div>
-                    <div><span>Website</span> : https://abc.tech</div>
-
-                    <div class="iconinfo">
-                        <td><i class="icon-twitter"></i></td>
-                        <td><i class="icon-facebook"></i></td>
-                        <td><i class="icon-gplus"></i></td>
-                        <td><i class="icon-linkedin"></i></td>
+            <div class="col-md-4">
+                <table>
+                    <tr>
+                        <td colspan="2" class="auto-style1">
+                            <strong>FAP mobile app (myFAP) is ready at</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://apps.apple.com/app/id1527723314">
+                                <img src="https://fap.fpt.edu.vn/images/app-store.png" style="width: 120px; height: 40px" alt="apple store" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://play.google.com/store/apps/details?id=com.fuct">
+                                <img src="https://fap.fpt.edu.vn/images/play-store.png" style="width: 120px; height: 40px" alt="google store" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form name="aspnetForm" method="post" action="./ScheduleOfWeek.aspx" id="aspnetForm">
+                    <div>
+                        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value/>
+                        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value/>
+                        <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value/>
+                        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI1NTU2NzI0Ng9kFgJmD2QWAgIDD2QWCgIBDxYCHgdWaXNpYmxlZxYEAgEPDxYCHgRUZXh0BQ1zb25tdGhlMTcwMDkxZGQCAw8PFgIfAQUYIENBTVBVUzogRlBUVS1Iw7JhIEzhuqFjZGQCAw8QDxYCHwBoZGQWAWZkAgUPDxYCHwEFQzxhIGhyZWY9Jy4uL1N0dWRlbnQuYXNweCc+SG9tZTwvYT4mbmJzcDt8Jm5ic3A7PGI+VmlldyBTY2hlZHVsZTwvYj5kZAIHD2QWEAIBDw8WAh8BBSFzb25tdGhlMTcwMDkxIChN4bqhYyBUdeG6pW4gU8ahbilkZAIDDxYCHwBnZAIHDxBkDxYFZgIBAgICAwIEFgUQBQQyMDIwBQQyMDIwZxAFBDIwMjEFBDIwMjFnEAUEMjAyMgUEMjAyMmcQBQQyMDIzBQQyMDIzZxAFBDIwMjQFBDIwMjRnFgECA2QCCQ8QDxYGHg5EYXRhVmFsdWVGaWVsZAUIZGxsVmFsdWUeDURhdGFUZXh0RmllbGQFB2RsbFRleHQeC18hRGF0YUJvdW5kZ2QQFTQOMDIvMDEgVG8gMDgvMDEOMDkvMDEgVG8gMTUvMDEOMTYvMDEgVG8gMjIvMDEOMjMvMDEgVG8gMjkvMDEOMzAvMDEgVG8gMDUvMDIOMDYvMDIgVG8gMTIvMDIOMTMvMDIgVG8gMTkvMDIOMjAvMDIgVG8gMjYvMDIOMjcvMDIgVG8gMDUvMDMOMDYvMDMgVG8gMTIvMDMOMTMvMDMgVG8gMTkvMDMOMjAvMDMgVG8gMjYvMDMOMjcvMDMgVG8gMDIvMDQOMDMvMDQgVG8gMDkvMDQOMTAvMDQgVG8gMTYvMDQOMTcvMDQgVG8gMjMvMDQOMjQvMDQgVG8gMzAvMDQOMDEvMDUgVG8gMDcvMDUOMDgvMDUgVG8gMTQvMDUOMTUvMDUgVG8gMjEvMDUOMjIvMDUgVG8gMjgvMDUOMjkvMDUgVG8gMDQvMDYOMDUvMDYgVG8gMTEvMDYOMTIvMDYgVG8gMTgvMDYOMTkvMDYgVG8gMjUvMDYOMjYvMDYgVG8gMDIvMDcOMDMvMDcgVG8gMDkvMDcOMTAvMDcgVG8gMTYvMDcOMTcvMDcgVG8gMjMvMDcOMjQvMDcgVG8gMzAvMDcOMzEvMDcgVG8gMDYvMDgOMDcvMDggVG8gMTMvMDgOMTQvMDggVG8gMjAvMDgOMjEvMDggVG8gMjcvMDgOMjgvMDggVG8gMDMvMDkOMDQvMDkgVG8gMTAvMDkOMTEvMDkgVG8gMTcvMDkOMTgvMDkgVG8gMjQvMDkOMjUvMDkgVG8gMDEvMTAOMDIvMTAgVG8gMDgvMTAOMDkvMTAgVG8gMTUvMTAOMTYvMTAgVG8gMjIvMTAOMjMvMTAgVG8gMjkvMTAOMzAvMTAgVG8gMDUvMTEOMDYvMTEgVG8gMTIvMTEOMTMvMTEgVG8gMTkvMTEOMjAvMTEgVG8gMjYvMTEOMjcvMTEgVG8gMDMvMTIOMDQvMTIgVG8gMTAvMTIOMTEvMTIgVG8gMTcvMTIOMTgvMTIgVG8gMjQvMTIOMjUvMTIgVG8gMzEvMTIVNAExATIBMwE0ATUBNgE3ATgBOQIxMAIxMQIxMgIxMwIxNAIxNQIxNgIxNwIxOAIxOQIyMAIyMQIyMgIyMwIyNAIyNQIyNgIyNwIyOAIyOQIzMAIzMQIzMgIzMwIzNAIzNQIzNgIzNwIzOAIzOQI0MAI0MQI0MgI0MwI0NAI0NQI0NgI0NwI0OAI0OQI1MAI1MQI1MhQrAzRnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnFgECJ2QCCw8WAh4JaW5uZXJodG1sBcQBPHRoICBhbGlnbj0nY2VudGVyJz5Nb248L3RoPjx0aCAgYWxpZ249J2NlbnRlcic+VHVlPC90aD48dGggIGFsaWduPSdjZW50ZXInPldlZDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz5UaHU8L3RoPjx0aCAgYWxpZ249J2NlbnRlcic+RnJpPC90aD48dGggIGFsaWduPSdjZW50ZXInPlNhdDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz5TdW48L3RoPmQCDQ8WAh8FBdIBPHRoICBhbGlnbj0nY2VudGVyJz4wMi8xMDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz4wMy8xMDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz4wNC8xMDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz4wNS8xMDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz4wNi8xMDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz4wNy8xMDwvdGg+PHRoICBhbGlnbj0nY2VudGVyJz4wOC8xMDwvdGg+ZAIPDxYCHwUFpCk8dHI+PHRkPlNsb3QgMCA8L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48L3RyPjx0cj48dGQ+U2xvdCAxIDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDIgPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PC90cj48dHI+PHRkPlNsb3QgMyA8L3RkPjx0ZD48cD48YSBocmVmPScuLi9TY2hlZHVsZS9BY3Rpdml0eURldGFpbC5hc3B4P2lkPTE0MjAxMzUnPkNTRDIwMS08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPUlTcXAyaktpYmZDeGJHRncyYXlFWGclM2QlM2QmU2Vzc2lvbk5vPUlKZnoyVktBSXJXOUV1VnZSM3VIZ2clM2QlM2QmdG9rZW49JyB0YXJnZXQ9J19ibGFuayc+VmlldyBNYXRlcmlhbHM8L2E+PGJyLz4gYXQgREUtMTA5IDxhID4gPGEgY2xhc3M9J2xhYmVsIGxhYmVsLXByaW1hcnknIHRhcmdldD0nX2JsYW5rJyBocmVmPSdodHRwczovL2Z1LWVkdW5leHQuZnB0LmVkdS52bic+LUVkdU5leHQgPC9hPjxici8+KDxmb250IGNvbG9yPUdyZWVuPmF0dGVuZGVkPC9mb250Pik8YnIvPjxzcGFuIGNsYXNzPSdsYWJlbCBsYWJlbC1zdWNjZXNzJz4oMTI6NTAtMTU6MTApPC9zcGFuPjxici8+PC9wPjwvdGQ+PHRkPjxwPjxhIGhyZWY9Jy4uL1NjaGVkdWxlL0FjdGl2aXR5RGV0YWlsLmFzcHg/aWQ9MTQyMDI1NSc+TEFCMjExLTxhIGNsYXNzPSdsYWJlbCBsYWJlbC13YXJuaW5nJyBocmVmPSdodHRwOi8vZmxtLmZwdC5lZHUudm4vZ3VpL3JvbGUvZ3Vlc3QvTGlzdFNjaGVkdWxlU3lsbGFidXM/c3ViamVjdENvZGU9d0xyWVpSWmt2ZUFIekJBdms3dmNGZyUzZCUzZCZTZXNzaW9uTm89SUpmejJWS0FJclc5RXVWdlIzdUhnZyUzZCUzZCZ0b2tlbj0nIHRhcmdldD0nX2JsYW5rJz5WaWV3IE1hdGVyaWFsczwvYT48YnIvPiBhdCBBTC1SMjAxIDxhID4gPGEgY2xhc3M9J2xhYmVsIGxhYmVsLXByaW1hcnknIHRhcmdldD0nX2JsYW5rJyBocmVmPSdodHRwczovL2Z1LWVkdW5leHQuZnB0LmVkdS52bic+LUVkdU5leHQgPC9hPjxici8+KDxmb250IGNvbG9yPUdyZWVuPmF0dGVuZGVkPC9mb250Pik8YnIvPjxzcGFuIGNsYXNzPSdsYWJlbCBsYWJlbC1zdWNjZXNzJz4oMTI6NTAtMTU6MTApPC9zcGFuPjxici8+PC9wPjwvdGQ+PHRkPjxwPjxhIGhyZWY9Jy4uL1NjaGVkdWxlL0FjdGl2aXR5RGV0YWlsLmFzcHg/aWQ9MTQyMDQ3NSc+REJJMjAyLTxhIGNsYXNzPSdsYWJlbCBsYWJlbC13YXJuaW5nJyBocmVmPSdodHRwOi8vZmxtLmZwdC5lZHUudm4vZ3VpL3JvbGUvZ3Vlc3QvTGlzdFNjaGVkdWxlU3lsbGFidXM/c3ViamVjdENvZGU9ajJHdnlzJTJiNUN2SmlyZWlkTDhTNklnJTNkJTNkJlNlc3Npb25Obz1JSmZ6MlZLQUlyVzlFdVZ2UjN1SGdnJTNkJTNkJnRva2VuPScgdGFyZ2V0PSdfYmxhbmsnPlZpZXcgTWF0ZXJpYWxzPC9hPjxici8+IGF0IERFLTEwNSA8YSA+IDxhIGNsYXNzPSdsYWJlbCBsYWJlbC1wcmltYXJ5JyB0YXJnZXQ9J19ibGFuaycgaHJlZj0naHR0cHM6Ly9mdS1lZHVuZXh0LmZwdC5lZHUudm4nPi1FZHVOZXh0IDwvYT48YnIvPig8Zm9udCBjb2xvcj1HcmVlbj5hdHRlbmRlZDwvZm9udD4pPGJyLz48c3BhbiBjbGFzcz0nbGFiZWwgbGFiZWwtc3VjY2Vzcyc+KDEyOjUwLTE1OjEwKTwvc3Bhbj48YnIvPjwvcD48L3RkPjx0ZD48cD48YSBocmVmPScuLi9TY2hlZHVsZS9BY3Rpdml0eURldGFpbC5hc3B4P2lkPTE0MjA2MTUnPkpQRDExMy08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPVhrcWElMmJrU3B0MiUyYjZUMUE0YlJjejdnJTNkJTNkJlNlc3Npb25Obz1lemlHSHFHTlJWQnVHUnJYOVFOVldnJTNkJTNkJnRva2VuPScgdGFyZ2V0PSdfYmxhbmsnPlZpZXcgTWF0ZXJpYWxzPC9hPjxici8+IGF0IERFLTEwNCA8YSA+IDxhIGNsYXNzPSdsYWJlbCBsYWJlbC1wcmltYXJ5JyB0YXJnZXQ9J19ibGFuaycgaHJlZj0naHR0cHM6Ly9mdS1lZHVuZXh0LmZwdC5lZHUudm4nPi1FZHVOZXh0IDwvYT48YnIvPig8Zm9udCBjb2xvcj1HcmVlbj5hdHRlbmRlZDwvZm9udD4pPGJyLz48c3BhbiBjbGFzcz0nbGFiZWwgbGFiZWwtc3VjY2Vzcyc+KDEyOjUwLTE1OjEwKTwvc3Bhbj48YnIvPjwvcD48L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDQgPC90ZD48dGQ+PHA+PGEgaHJlZj0nLi4vU2NoZWR1bGUvQWN0aXZpdHlEZXRhaWwuYXNweD9pZD0xNDIwNjE2Jz5KUEQxMTMtPGEgY2xhc3M9J2xhYmVsIGxhYmVsLXdhcm5pbmcnIGhyZWY9J2h0dHA6Ly9mbG0uZnB0LmVkdS52bi9ndWkvcm9sZS9ndWVzdC9MaXN0U2NoZWR1bGVTeWxsYWJ1cz9zdWJqZWN0Q29kZT1Ya3FhJTJia1NwdDIlMmI2VDFBNGJSY3o3ZyUzZCUzZCZTZXNzaW9uTm89SUpmejJWS0FJclc5RXVWdlIzdUhnZyUzZCUzZCZ0b2tlbj0nIHRhcmdldD0nX2JsYW5rJz5WaWV3IE1hdGVyaWFsczwvYT48YnIvPiBhdCBERS0xMDUgPGEgPiA8YSBjbGFzcz0nbGFiZWwgbGFiZWwtcHJpbWFyeScgdGFyZ2V0PSdfYmxhbmsnIGhyZWY9J2h0dHBzOi8vZnUtZWR1bmV4dC5mcHQuZWR1LnZuJz4tRWR1TmV4dCA8L2E+PGJyLz4oPGZvbnQgY29sb3I9R3JlZW4+YXR0ZW5kZWQ8L2ZvbnQ+KTxici8+PHNwYW4gY2xhc3M9J2xhYmVsIGxhYmVsLXN1Y2Nlc3MnPigxNToyMC0xNzo0MCk8L3NwYW4+PGJyLz48L3A+PC90ZD48dGQ+LTwvdGQ+PHRkPjxwPjxhIGhyZWY9Jy4uL1NjaGVkdWxlL0FjdGl2aXR5RGV0YWlsLmFzcHg/aWQ9MTQyMDEzNic+Q1NEMjAxLTxhIGNsYXNzPSdsYWJlbCBsYWJlbC13YXJuaW5nJyBocmVmPSdodHRwOi8vZmxtLmZwdC5lZHUudm4vZ3VpL3JvbGUvZ3Vlc3QvTGlzdFNjaGVkdWxlU3lsbGFidXM/c3ViamVjdENvZGU9SVNxcDJqS2liZkN4YkdGdzJheUVYZyUzZCUzZCZTZXNzaW9uTm89ZXppR0hxR05SVkJ1R1JyWDlRTlZXZyUzZCUzZCZ0b2tlbj0nIHRhcmdldD0nX2JsYW5rJz5WaWV3IE1hdGVyaWFsczwvYT48YnIvPiBhdCBERS0xMDkgPGEgPiA8YSBjbGFzcz0nbGFiZWwgbGFiZWwtcHJpbWFyeScgdGFyZ2V0PSdfYmxhbmsnIGhyZWY9J2h0dHBzOi8vZnUtZWR1bmV4dC5mcHQuZWR1LnZuJz4tRWR1TmV4dCA8L2E+PGJyLz4oPGZvbnQgY29sb3I9UmVkPmFic2VudDwvZm9udD4pPGJyLz48c3BhbiBjbGFzcz0nbGFiZWwgbGFiZWwtc3VjY2Vzcyc+KDE1OjIwLTE3OjQwKTwvc3Bhbj48YnIvPjwvcD48L3RkPjx0ZD48cD48YSBocmVmPScuLi9TY2hlZHVsZS9BY3Rpdml0eURldGFpbC5hc3B4P2lkPTE0MjAyNTYnPkxBQjIxMS08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPXdMcllaUlprdmVBSHpCQXZrN3ZjRmclM2QlM2QmU2Vzc2lvbk5vPWV6aUdIcUdOUlZCdUdSclg5UU5WV2clM2QlM2QmdG9rZW49JyB0YXJnZXQ9J19ibGFuayc+VmlldyBNYXRlcmlhbHM8L2E+PGJyLz4gYXQgQUwtUjIwMSA8YSA+IDxhIGNsYXNzPSdsYWJlbCBsYWJlbC1wcmltYXJ5JyB0YXJnZXQ9J19ibGFuaycgaHJlZj0naHR0cHM6Ly9mdS1lZHVuZXh0LmZwdC5lZHUudm4nPi1FZHVOZXh0IDwvYT48YnIvPig8Zm9udCBjb2xvcj1HcmVlbj5hdHRlbmRlZDwvZm9udD4pPGJyLz48c3BhbiBjbGFzcz0nbGFiZWwgbGFiZWwtc3VjY2Vzcyc+KDE1OjIwLTE3OjQwKTwvc3Bhbj48YnIvPjwvcD48L3RkPjx0ZD48cD48YSBocmVmPScuLi9TY2hlZHVsZS9BY3Rpdml0eURldGFpbC5hc3B4P2lkPTE0MjA0NzYnPkRCSTIwMi08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPWoyR3Z5cyUyYjVDdkppcmVpZEw4UzZJZyUzZCUzZCZTZXNzaW9uTm89ZXppR0hxR05SVkJ1R1JyWDlRTlZXZyUzZCUzZCZ0b2tlbj0nIHRhcmdldD0nX2JsYW5rJz5WaWV3IE1hdGVyaWFsczwvYT48YnIvPiBhdCBERS0xMDQgPGEgPiA8YSBjbGFzcz0nbGFiZWwgbGFiZWwtcHJpbWFyeScgdGFyZ2V0PSdfYmxhbmsnIGhyZWY9J2h0dHBzOi8vZnUtZWR1bmV4dC5mcHQuZWR1LnZuJz4tRWR1TmV4dCA8L2E+PGJyLz4oPGZvbnQgY29sb3I9UmVkPmFic2VudDwvZm9udD4pPGJyLz48c3BhbiBjbGFzcz0nbGFiZWwgbGFiZWwtc3VjY2Vzcyc+KDE1OjIwLTE3OjQwKTwvc3Bhbj48YnIvPjwvcD48L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PC90cj48dHI+PHRkPlNsb3QgNSA8L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48L3RyPjx0cj48dGQ+U2xvdCA2IDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDcgPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PC90cj48dHI+PHRkPlNsb3QgOCA8L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48L3RyPjx0cj48dGQ+U2xvdCA5IDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDEwIDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDExIDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDEyIDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+ZAIRDxYCHwUF3AI8dWw+PGxpPig8Zm9udCBjb2xvcj0nZ3JlZW4nPmF0dGVuZGVkPC9mb250Pik6IHNvbm10aGUxNzAwOTEgaGFkIGF0dGVuZGVkIHRoaXMgYWN0aXZpdHkgLyBN4bqhYyBUdeG6pW4gU8ahbiDEkcOjIHRoYW0gZ2lhIGhv4bqhdCDEkeG7mW5nIG7DoHk8L2xpPjxsaT4oPGZvbnQgY29sb3I9J3JlZCc+YWJzZW50PC9mb250Pik6IHNvbm10aGUxNzAwOTEgaGFkIE5PVCBhdHRlbmRlZCB0aGlzIGFjdGl2aXR5IC8gTeG6oWMgVHXhuqVuIFPGoW4gxJHDoyB24bqvbmcgbeG6t3QgYnXhu5VpIG7DoHk8L2xpPiAgIDxsaT4oLSk6IG5vIGRhdGEgd2FzIGdpdmVuIC8gY2jGsGEgY8OzIGThu68gbGnhu4d1PC9saT4gPC91bD5kAgkPFgIfAGdkZPRfq7ojEqEfcDcfRYT05M7Le2ZOqyA5+vPGgfnpacGv"
+                        />
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        var theForm = document.forms['aspnetForm'];
+                        if (!theForm) {
+                            theForm = document.aspnetForm;
+                        }
 
-    <!--thông tin nghề nghiệp-->
+                        function __doPostBack(eventTarget, eventArgument) {
+                            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                                theForm.__EVENTTARGET.value = eventTarget;
+                                theForm.__EVENTARGUMENT.value = eventArgument;
+                                theForm.submit();
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <div>
+                        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D5FDD5A8" />
+                        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdADzYc+ewLJrEllCMLHeAz/KT1XYALReTroFJdjTvD/QOPMPbrs0M9H1EydjTxJ0V+Vr2Apjxie6lWUWWqazOMDQqy4h0ifhAeGhA2+tYuqG7WlhIjK/ryS3afOfp5FzohkzYp13cP9omwpgyj8tfOyKDABIfE9keuuy5VzdSJoDlCDDarFJkh0XsarzAy8B0HqOimTcb2/iolFYKe+qDIgEgQAZnPTJ14zMFs5WO+1Jx425g742rvsJy6NWyvJ1f1k9DuqAbcSSduGGTZXEnCjl7t1bxwRMDBjM/ltH2/1qLPf1lziVZTVsGh8/QsOwQLirUAv7izDPjGHWv0cxtdFyyzeffAxCYSMnGzb8nSa+F4M6EJT/XgIQcEVR+4VdWDcLUinbPJeq8FT02AiMqRVAfVMQZ9G2edaZisToeqPDRa4NA4/MMS11kVoCIRsPPD50d9giOK4H79knwi2YQ7GaFXhn/6m64A2WKlNXZaR1dFgUtOkiMGqKxiUDESWPHJ+r78Oy43G3VefQJiryUUCXt6nq8zgY3SCNyNJvH5UXPFLExSsRuaDifXn3xREG0xxHEify/2pZqMOcC4hK7iHOGKHgkBvgOpx6GjywCEGi1BgO2fh6aVlgspRNs2BYbqNvgfXO4f5YOXhW+JkxiZiV/ji/d9j1uq90BZRQ2hvL8r0cYGDxpS7aFTmaD29B3uAsNVzFx9T0MaYiA1XarslwwKcJ9fzDj2YvDcaBWEZMVyCxERUSg84f4yLXR5F+aV+n3wyHMvalECWwVzOsG44QnO4gTty9iF/lxaJIIwEc5sRSBjQP0AE1v0SPqXQMmamChxyc2ijzS5KPt1XBvTrS1eVQFBggGV/apGjFZGDIFqBzNoKv/ZKQLF3Q5n6gKtFG+j39/RauqtaG2iEWj0hXRnNmFBrit25bwUc1AnfcGxKARoJ+YWfki4PcG/VF1o+b9dcnpDhAochHtqdWlrTrtROX4Vjz4ZrD5AYT4Jw6hHb+2sFpx4umg+7d1Sh6DX1VxlIyV5RAzJGZ+CtloaSDAJsucT3JFOJuXIFcmAuYsZvlPyqsUzMx0Vl12PH8bOVtoGeLne2montjUcNIqxpYDgE5w4Pz9jpMXo2c3dbm8x+ChFxzg4JJofBf4KFGPUu/lVrhbJalAEWPy3yZzR9xhBs6E2lrzxeN9XoMfEfdDi/QvgDWa+U7GB8EP1e+0f1Gu7ptBEFkuMzJnGucyBjYUEQKoT8Thxu2WYeF6Trc3GusC7iRLH5o3/9+k6QP/sZBJSrc9YB/FEvYTBLR4OsxJ+pslAif5unLqibg5cm/MIw=="
+                        />
+                    </div>
+                    <div id="ctl00_divUser" style="float: right; margin-right: 16px;">
+                        <a href="?view=user">
+                            <span id="ctl00_lblLogIn" class="label label-success">traphhs181041</span>
+                        </a>
+                        | <a href="?logout=true" class="label label-success">logout</a> |
+                        <span id="ctl00_lblCampusName" class="label label-success">CAMPUS: FPTU-Hòa Lạc</span>
+                    </div>
+                    <div style="position: absolute; top: -35px; right: 30px; width: 150px;"></div>
+                    <ol class="breadcrumb">
 
-    <section class="job-info ">
-        <div class="container3 ">
-            <div class="job1">
+                        <span id="ctl00_lblNavigation">
+                                    <a href="../Student.aspx">Home</a>
+                                    &nbsp;|&nbsp;<b>View Schedule</b>
+                                </span>
 
-                <h1 class="tieude">Kinh nghiệm</h1>
-                <td><i class="ic-toolbox"></i></td>
+                    </ol>
+                    <table>
+                        <tr style="border-bottom: 0 none">
+                            <td>
+                                <div>
+                                    <style>
+                                        div.online-indicator {
+                                            display: inline-block;
+                                            width: 15px;
+                                            height: 15px;
+                                            margin-right: 5px;
+                                            background-color: #0fcc45;
+                                            border-radius: 50%;
+                                            position: relative;
+                                        }
+                                        
+                                        span.blink {
+                                            display: block;
+                                            width: 15px;
+                                            height: 15px;
+                                            background-color: #0fcc45;
+                                            opacity: 0.7;
+                                            border-radius: 50%;
+                                            animation: blink 1s linear infinite;
+                                        }
+                                        
+                                        h3.online-text {
+                                            display: inline;
+                                            font-family: 'Rubik', sans-serif;
+                                            font-weight: 400;
+                                            text-shadow: 0px 3px 6px rgba(150, 150, 150, 0.2);
+                                            position: relative;
+                                            cursor: pointer;
+                                        }
+                                        /*Animations*/
+                                        
+                                        @keyframes blink {
+                                            100% {
+                                                transform: scale(2, 2);
+                                                opacity: 0;
+                                            }
+                                        }
+                                        
+                                        .auto-style1 {
+                                            color: #FF3300;
+                                        }
+                                        
+                                        .auto-style2 {
+                                            color: #FF3300;
+                                            font-size: 14pt;
+                                        }
+                                    </style>
+                                    <h2>
+                                        Activities for
+                                        <span id="ctl00_mainContent_lblStudent">traphhs181041 (Phạm Hương Trà)</span>
+                                    </h2>
+                                    <p>
+                                        <b>Note</b> : These activities do not include extra-curriculum activities, such as club activities ...
 
-                <div class="p1">
-                    <b>Công Ty Y</b>
-                    <p class="r0"><i><span>05/2022 -</span><span class="r">Hiện Tại</span></i></p>
-                    <p>- Full Stack Developer</p>
-                    <p>- Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.</p>
-                    <p>- Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL</p>
-                </div>
+                                    </p>
+                                    <p>
+                                        <b>Chú thích</b> : Các hoạt động trong bảng dưới không bao gồm hoạt động ngoại khóa, ví dụ như hoạt động câu lạc bộ ...
 
-                <div class="p1">
-                    <b>Công ty X</b>
-                    <div class="r0"><i>06/2021 - 05/2022</i></div>
-                    <p>Web Designer</p>
-                    <p>- Thiết kế Website dự trên yêu cầu của khách hàng.</p>
-                    <p>- Sử dụng các công cụ: Figma, Canva PTS.</p>
-                </div>
+                                    </p>
+                                    <div id="ctl00_mainContent_ghichu">
+                                        <p>
+                                            Các phòng bắt đầu bằng AL thuộc tòa nhà Alpha. VD: AL...<br/> Các phòng bắt đầu bằng BE thuộc tòa nhà Beta. VD: BE,..<br/> Các phòng bắt đầu bằng G thuộc tòa nhà Gamma. VD: G201,...<br/> Các phòng tập bằng đầu
+                                            bằng R thuộc khu vực sân tập Vovinam.<br/> Các phòng bắt đầu bằng DE thuộc tòa nhà Delta. VD: DE,..<br/>Little UK (LUK) thuộc tầng 5 tòa nhà Delta
 
-            </div>
-            <div class="job1">
-                <h1 class="tieude">Học vấn</h1>
-                <td><i class="ic-pencil"></i></td>
+                                        </p>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2">
+                                                    <span class="auto-style1">
+                                                            <strong>Year</strong>
+                                                        </span>
+                                                    <select name="ctl00$mainContent$drpYear" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$mainContent$drpYear\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_mainContent_drpYear">
+                                                            <option value="2020">2020</option>
+                                                            <option value="2021">2021</option>
+                                                            <option value="2022">2022</option>
+                                                            <option selected="selected" value="2023">2023</option>
+                                                            <option value="2024">2024</option>
+                                                        </select>
+                                                    <br/> Week
 
-                <div class="p2">
-                    <b>FUNIX</b>
-                    <div class="r0"><i>06/2021 - 05/2022</i></div>
-                    <p>-Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack.</p>
-                    <p>-GPA: 9/10</p>
-                </div>
+                                                    <select name="ctl00$mainContent$drpSelectWeek" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$mainContent$drpSelectWeek\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_mainContent_drpSelectWeek">
+                                                            <option value="1">02/01 To 08/01</option>
+                                                            <option value="2">09/01 To 15/01</option>
+                                                            <option value="3">16/01 To 22/01</option>
+                                                            <option value="4">23/01 To 29/01</option>
+                                                            <option value="5">30/01 To 05/02</option>
+                                                            <option value="6">06/02 To 12/02</option>
+                                                            <option value="7">13/02 To 19/02</option>
+                                                            <option value="8">20/02 To 26/02</option>
+                                                            <option value="9">27/02 To 05/03</option>
+                                                            <option value="10">06/03 To 12/03</option>
+                                                            <option value="11">13/03 To 19/03</option>
+                                                            <option value="12">20/03 To 26/03</option>
+                                                            <option value="13">27/03 To 02/04</option>
+                                                            <option value="14">03/04 To 09/04</option>
+                                                            <option value="15">10/04 To 16/04</option>
+                                                            <option value="16">17/04 To 23/04</option>
+                                                            <option value="17">24/04 To 30/04</option>
+                                                            <option value="18">01/05 To 07/05</option>
+                                                            <option value="19">08/05 To 14/05</option>
+                                                            <option value="20">15/05 To 21/05</option>
+                                                            <option value="21">22/05 To 28/05</option>
+                                                            <option value="22">29/05 To 04/06</option>
+                                                            <option value="23">05/06 To 11/06</option>
+                                                            <option value="24">12/06 To 18/06</option>
+                                                            <option value="25">19/06 To 25/06</option>
+                                                            <option value="26">26/06 To 02/07</option>
+                                                            <option value="27">03/07 To 09/07</option>
+                                                            <option value="28">10/07 To 16/07</option>
+                                                            <option value="29">17/07 To 23/07</option>
+                                                            <option value="30">24/07 To 30/07</option>
+                                                            <option value="31">31/07 To 06/08</option>
+                                                            <option value="32">07/08 To 13/08</option>
+                                                            <option value="33">14/08 To 20/08</option>
+                                                            <option value="34">21/08 To 27/08</option>
+                                                            <option value="35">28/08 To 03/09</option>
+                                                            <option value="36">04/09 To 10/09</option>
+                                                            <option value="37">11/09 To 17/09</option>
+                                                            <option value="38">18/09 To 24/09</option>
+                                                            <option value="39">25/09 To 01/10</option>
+                                                            <option selected="selected" value="40">02/10 To 08/10</option>
+                                                            <option value="41">09/10 To 15/10</option>
+                                                            <option value="42">16/10 To 22/10</option>
+                                                            <option value="43">23/10 To 29/10</option>
+                                                            <option value="44">30/10 To 05/11</option>
+                                                            <option value="45">06/11 To 12/11</option>
+                                                            <option value="46">13/11 To 19/11</option>
+                                                            <option value="47">20/11 To 26/11</option>
+                                                            <option value="48">27/11 To 03/12</option>
+                                                            <option value="49">04/12 To 10/12</option>
+                                                            <option value="50">11/12 To 17/12</option>
+                                                            <option value="51">18/12 To 24/12</option>
+                                                            <option value="52">25/12 To 31/12</option>
+                                                        </select>
+                                                </th>
+                                                <div id="ctl00_mainContent_divNameDay">
+                                                    <th align="center">Mon</th>
+                                                    <th align="center">Tue</th>
+                                                    <th align="center">Wed</th>
+                                                    <th align="center">Thu</th>
+                                                    <th align="center">Fri</th>
+                                                    <th align="center">Sat</th>
+                                                    <th align="center">Sun</th>
+                                                </div>
+                                            </tr>
+                                            <tr>
+                                                <div id="ctl00_mainContent_divShowDate">
+                                                    <th align="center">02/10</th>
+                                                    <th align="center">03/10</th>
+                                                    <th align="center">04/10</th>
+                                                    <th align="center">05/10</th>
+                                                    <th align="center">06/10</th>
+                                                    <th align="center">07/10</th>
+                                                    <th align="center">08/10</th>
+                                                </div>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <div id="ctl00_mainContent_divContent">
+                                                <tr>
+                                                    <td>Slot 1 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 2 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 3 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 4 </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420135">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=ISqp2jKibfCxbGFw2ayEXg%3d%3d&SessionNo=IJfz2VKAIrW9EuVvR3uHgg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(12:50-14:20)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420255">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=wLrYZRZkveAHzBAvk7vcFg%3d%3d&SessionNo=IJfz2VKAIrW9EuVvR3uHgg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(12:50-14:20)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420475">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=j2Gvys%2b5CvJireidL8S6Ig%3d%3d&SessionNo=IJfz2VKAIrW9EuVvR3uHgg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(12:50-14:20)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420615">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=Xkqa%2bkSpt2%2b6T1A4bRcz7g%3d%3d&SessionNo=eziGHqGNRVBuGRrX9QNVWg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(12:50-14:20)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420615">
+                                                                MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=Xkqa%2bkSpt2%2b6T1A4bRcz7g%3d%3d&SessionNo=eziGHqGNRVBuGRrX9QNVWg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(12:50-14:20)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 5 </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420616">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=Xkqa%2bkSpt2%2b6T1A4bRcz7g%3d%3d&SessionNo=IJfz2VKAIrW9EuVvR3uHgg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(14:30-16:00)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420615">
+                                                                MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=Xkqa%2bkSpt2%2b6T1A4bRcz7g%3d%3d&SessionNo=eziGHqGNRVBuGRrX9QNVWg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(12:50-14:20)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420136">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=ISqp2jKibfCxbGFw2ayEXg%3d%3d&SessionNo=eziGHqGNRVBuGRrX9QNVWg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="Red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(14:30-16:00)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420256">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=wLrYZRZkveAHzBAvk7vcFg%3d%3d&SessionNo=eziGHqGNRVBuGRrX9QNVWg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(14:30-16:00)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p>
+                                                            <a href="../Schedule/ActivityDetail.aspx?id=1420476">
+                                                                    MKT101-<a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=j2Gvys%2b5CvJireidL8S6Ig%3d%3d&SessionNo=eziGHqGNRVBuGRrX9QNVWg%3d%3d&token=" target="_blank">View Materials</a>
+                                                            <br/> at DE-109
+                                                            <a>
+                                                                <a class="label label-primary" target="_blank" href="https://fu-edunext.fpt.edu.vn">-EduNext </a>
+                                                                <br/> (
+                                                                <font color="Red">Not Yet</font>
+                                                                )<br/>
+                                                                <span class="label label-success">(14:30-16:00)</span>
+                                                                <br/>
+                                                        </p>
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 6 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>
+                                                        <p><a href="../Schedule/ActivityDetail.aspx?id=1517490">SSL101c-</a><a class="label label-warning" href="http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=EFAWOq00YaqLNfmpdP6IkA%3d%3d&amp;SessionNo=TOzW%2b2PecME5SIRGC1cQKQ%3d%3d&amp;token="
+                                                                target="_blank">View Materials</a><br> at Phòng tự học 16
+                                                            <a> <br>(
+                                                                <font color="Green">attended</font>)<br><span class="label label-success">(14:30-16:00)</span><br></a>
+                                                        </p>
+                                                    </td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 7 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 8 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 9 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 10 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 11 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 12 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slot 13 </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </div>
+                                        </tbody>
+                                    </table>
+                                    <p>
+                                        <b>More note / Chú thích thêm</b> :
 
-                <div class="p2">
-                    <b>Cử Nhân - ĐH FPT</b>
-                    <div class="r0"><i>08/2016 - 09/2017</i></div>
-                    <p>-Chuyên NGhành: Kĩ thuật Phần Mềm.</p>
-                    <p>-GPA: 3.2/4</p>
-                </div>
-
-                <div class="p2">
-                    <b>Đại học Hà Nội</b>
-                    <div class="r0"><i>08/2016 - 02/2018</i></div>
-                    <p>-Hệ Từ Xa,Chuyên NGhành: Kĩ thuật Phần Mềm.</p>
-                    <p>-GPA: 3.2/4</p>
-                </div>
-            </div>
-
-            <div class="job1">
-                <h1 class="tieude">Hoạt động</h1>
-                <td><i class="ic-toolbox"></i></td>
-
-                <div class="p3">
-                    <b>FPT Edu Hackathon 2019</b>
-                    <div class="r0"><i>03/2019-05/2019</i></div>
-                    <p>Web Designer</p>
-                    <p>- Giải 3 bảng A</p>
-                    <p>- Đề tài: Trang web về phân loại rác thải.</p>
-                </div>
-
-                <div class="p3">
-                    <b>Câu lạc bộ Z</b>
-                    <div class="r0"><i>08/2018-08/2019</i></div>
-                    <p>- Trưởng ban chuyên môn</p>
-                </div>
-
-                <div class="p3">
-                    <b>Câu lạc Bộ Z</b>
-                    <div class="r0"><i>08/2016</i></div>
-                    <p>- Hỗ trợ tổ chức tuần lễ văn hóa Việt Nam - Nhật Bản</p>
-                </div>
-            </div>
-
-            <div class="job1">
-                <h1>Sở thích</h1>
-                <td><i class="ic-telescope"></i></td>
-                <div class="nn1">
-                    <table class="iconst">
-                        <tr>
-                            <td><i class="ic-megaphone"></i>
-                                <p class="pp1">Âm Nhạc</p>
+                                    </p>
+                                    <div id="ctl00_mainContent_divfoot">
+                                        <ul>
+                                            <li>
+                                                (
+                                                <font color="green">attended</font>
+                                                ): sonmthe170091 had attended this activity / Phạm Hương Trà đã tham gia hoạt động này
+                                            </li>
+                                            <li>
+                                                (
+                                                <font color="red">absent</font>
+                                                ): sonmthe170091 had NOT attended this activity / Phạm Hương Trà đã vắng mặt buổi này
+                                            </li>
+                                            <li>(-): no data was given / chưa có dữ liệu</li>
+                                        </ul>
+                                    </div>
+                                    <p></p>
+                                </div>
                             </td>
-                            <td><i class="ic-strategy"></i>
-                                <p class="pp1">Chơi Game</p>
-                            </td>
-                            <td><i class="ic-hotairballoon"></i>
-                                <p class="pp1">Du Lịch</p>
-                            </td>
-                            <td><i class="ic-basket"></i>
-                                <p class="pp1">Nấu Ăn</p>
+                        </tr>
+                        <tr style="border-bottom: 0 none">
+                            <td>
+                                <br/>
+                                <table width="100%" style="border: 1px solid transparent;" id="cssTable">
+                                    <tr>
+                                        <td>
+                                            <div id="ctl00_divSupport">
+                                                <br/>
+                                                <b>Mọi góp ý, thắc mắc xin liên hệ: </b>
+                                                <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13.333333969116211px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">Phòng dịch vụ sinh viên</span>                                                : Email:
+                                                <a href="/cdn-cgi/l/email-protection#f5919c969d8380869c9b9d839c909bb59390db909180db839b">
+                                                    <span class="__cf_email__" data-cfemail="72161b111a0407011b1c1a041b171c3214175c1716075c041c">[email &#160;protected]</span>
+                                                </a>
+                                                . Điện thoại: <span class="style1" style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13.333333969116211px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">(024)7308.13.13 </span>
+                                                <br/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="text-align: center">
+                                                © Powered by <a href="http://fpt.edu.vn" target="_blank">FPT University</a> &nbsp;|&nbsp;
+                                                <a href="http://cms.fpt.edu.vn/" target="_blank">CMS</a> &nbsp;|&nbsp;
+                                                <a href="http://library.fpt.edu.vn" target="_blank">library</a> &nbsp;|&nbsp;
+                                                <a href="http://library.books24x7.com" target="_blank">books24x7</a>
+                                                <span id="ctl00_lblHelpdesk"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>
-                </div>
-            </div>
-
-            <div class="job1">
-                <h1>Ngôn ngữ</h1>
-                <td><i class="ic-tools-2"></i></td>
-                <div class="nn1">
-                    <div>
-                        <p>HTML/CSS: Fundamental</p>
-                        <span class="score-bar1" style=" background:#199cdb;"></span>
-                        <span class="score-bar2" style=" background:#ccc;"></span>
-                        <span class="score-bar3" style=" background:#ccc;"></span>
-                    </div>
-                    <div>
-                        <p>Javascript: Intermediate</p>
-                        <span class="score-bar1" style=" background:#199cdb;"></span>
-                        <span class="score-bar2" style=" background:#199cdb;"></span>
-                        <span class="score-bar3" style=" background:#ccc;"></span>
-                    </div>
-                    <div>
-                        <p>NodeJS: Intermediate</p>
-                        <span class="score-bar1" style=" background:#199cdb;"></span>
-                        <span class="score-bar2" style=" background:#199cdb;"></span>
-                        <span class="score-bar3" style=" background:#ccc;"></span>
-                    </div>
-                    <div>
-                        <p>Boostrap 5: Fundamental</p>
-                        <span class="score-bar1" style=" background:#199cdb;"></span>
-                        <span class="score-bar2" style=" background:#ccc;"></span>
-                        <span class="score-bar3" style=" background:#ccc;"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="job1">
-                <h1>Kỹ năng</h1>
-                <td><i class="ic-mic"></i></td>
-                <div class="nn1">
-                    <div>
-                        <p>Tiếng Anh - IELTS 7.0</p>
-                        <span class="score-bar1" style=" background:#199cdb;"></span>
-                        <span class="score-bar2" style=" background:#199cdb;"></span>
-                        <span class="score-bar3" style=" background:#ccc;"></span>
-                    </div>
-
-                    <div>
-                        <p>Tiếng Nhật - JLPT N4</p>
-                        <span class="score-bar1" style=" background:#199cdb;"></span>
-                        <span class="score-bar2" style=" background:#ccc;"></span>
-                        <span class="score-bar3" style=" background:#ccc;"></span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--chứng chỉ giải thưởng-->
-    <section id="certificate " class="bg-grey ">
-        <div class="container ">
-            <h1 class="section-title ">
-                Chứng chỉ - Giải thưởng
-            </h1>
-            <div class="ccgt">
-                <div class="nd">
-                    <a><img class="imgcc" src="images/Cert_DBI.png" alt="DBI" width="250" height="150" ;></a>
-                    <div>
-                        <p><b>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</b></p>
-                        <p>-Chứng chỉ thuộc chương trình CCDN</p>
-                        <p>-GPA: 8.6</p>
-                    </div>
-                </div>
-
-                <div class="nd">
-                    <a><img class="imgcc" src="images/Cert_PRF.png" alt="DBI" width="250" height="150" ;></a>
-                    <div>
-                        <p><b>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</b></p>
-                        <p>-Chứng chỉ thuộc chương trình CCDN</p>
-                        <p>-GPA: 8.9</p>
-                    </div>
-                </div>
-
-                <div class="nd">
-                    <a><img class="imgcc" src="images/Cert_WEB.png" alt="DBI" width="250" height="150" ;></a>
-                    <div>
-                        <p><b>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</b></p>
-                        <p>-Chứng chỉ thuộc chương trình CCDN</p>
-                        <p>-GPA: 8.0</p>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10421012-13']);
+        _gaq.push(['_trackPageview']);
 
-    </section>
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        var isClose = false;
 
-    <!--dự án-->
+        //this code will handle the F5 or Ctrl+F5 key
+        //need to handle more cases like ctrl+R whose codes are not listed here
+        document.onkeydown = checkKeycode;
 
-    <section id="project ">
-        <div class="container5">
-            <h1 class="section-title1">Dự Án</h1>
-            <div class="container6 ">
-                <div>
-                    <img src="images/project_1.png" alt="Cv cá nhân" width="100%">
-                    <div class="canhan">CV CÁ NHÂN</div>
-                    <div class="canhan">
-                        <div class="r1">
-                            <p class="mb-0">2021</p>
-                        </div>
-                        <td><i class="icon-user-1"></i></td>
-                        <span style="margin-right: 20px;">FUNIX</span>
-                        <td><i class="icon-lamp"></i></td>
-                        <span>Developer</span>
-                    </div>
-                    <div>
-                        <table class="table2">
-                            <tr>
-                                <td>Mô Tả</td>
-                                <td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
-                            </tr>
-                            <tr class="r2">
-                                <td>Nhiệm Vụ</td>
-                                <td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
-                            </tr>
-                            <tr>
-                                <td>Công Nghệ</td>
-                                <td>
-                                    - HTML,CSS</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+        function checkKeycode(e) {
+            var keycode;
+            if (window.event)
+                keycode = window.event.keyCode;
+            else if (e)
+                keycode = e.which;
+            if (keycode == 116) {
+                isClose = true;
+            }
+        }
 
-                <div>
-                    <img src="images/project_2.png" alt="CV cá nhân" width="100%">
-                    <div class="canhan">TRANG WEB QUẢN LÍ THÚ CƯNG</div>
-                    <div class="canhan">
-                        <div class="r1">
-                            <p class="mb-0">2021</p>
-                        </div>
-                        <td><i class="icon-user-1"></i></td>
-                        <span style="margin-right: 20px;">FUNIX</span>
-                        <td><i class="icon-lamp"></i></td>
-                        <span>Developer</span>
-                    </div>
-                    <div>
-                        <table class="table2">
-                            <tr>
-                                <td>Mô Tả</td>
-                                <td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
-                            </tr>
-                            <tr class="r2">
-                                <td>Nhiệm Vụ</td>
-                                <td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
-                            </tr>
-                            <tr>
-                                <td>Công Nghệ</td>
-                                <td>
-                                    - HTML,CSS</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+        function somefunction() {
+            isClose = true;
+        }
 
-                <div>
-                    <img src="images/project_3.png" alt="cv cá nhân" width="100%">
-                    <div class="canhan">TRANG WEB XEM TIN TỨC</div>
-                    <div class="canhan">
-                        <div class="r1">
-                            <p class="mb-0">2021</p>
-                        </div>
-                        <td><i class="icon-user-1"></i></td>
-                        <span style="margin-right: 20px;">FUNIX</span>
-                        <td><i class="icon-lamp"></i></td>
-                        <span>Developer</span>
-                    </div>
-                    <div>
-                        <table class="table2">
-                            <tr>
-                                <td>Mô Tả</td>
-                                <td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
-                            </tr>
-                            <tr class="r2">
-                                <td>Nhiệm Vụ</td>
-                                <td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
-                            </tr>
-                            <tr>
-                                <td>Công Nghệ</td>
-                                <td>
-                                    - HTML,CSS</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        //<![CDATA[
 
-    <!--footer-->
+        function bodyUnload() {
 
-    <section id="footer " class="bg-grey ">
-        <div class="container5 ">
-            <footer class="footer">
-                <a>
-                    <td><i class="icon-facebook-circled"></i></td>
-                </a>
-                <i><span class="ft text-black-50">Facebook</span></i>
+            if (!isClose) {
+                var request = GetRequest();
+                request.open("GET", "LogOut.aspx", true);
+                request.send();
+            }
+        }
 
-                <a>
-                    <td><i class="icon-linkedin-circled"></i></td>
-                </a>
-                <i><span class="ft text-black-50">Linkedin</span></i>
-
-                <a>
-                    <td><i class="icon-github-circled"></i></td>
-                </a>
-                <i><span class="ft text-black-50">Github</span></i>
-
-            </footer>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw5f+ua6bX6q0ZzO8MNJ6dspv5Uv9Wp2tk5VweUstIe3/aY5wBd8Jz1i6WLIbO" crossorigin="anonymous"></script>
-
+        function GetRequest() {
+            var request = null;
+            if (window.XMLHttpRequest) {
+                //incase of IE7,FF, Opera and Safari browser
+                request = new XMLHttpRequest();
+            } else {
+                //for old browser like IE 6.x and IE 5.x
+                request = new ActiveXObject('MSXML2.XMLHTTP.3.0');
+            }
+            return request;
+        }
+        //]]>
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"828f4c734caf0999","version":"2023.10.0","token":"56c6dd7e4ecf4947aa540f48289e45af"}'
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
